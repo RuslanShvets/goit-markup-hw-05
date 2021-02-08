@@ -42,6 +42,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation .logo {
@@ -138,12 +139,14 @@ header .container {
   height: 44px;
   background-color: #ffffff;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-icon {
   width: 20px;
   height: 20px;
   color: #AFB1B8;
   fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover,
@@ -158,6 +161,8 @@ header .container {
   width: 20px;
   height: 20px;
   fill: #FFFFFF;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
@@ -175,6 +180,7 @@ header .container {
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
  
   
 }
@@ -232,6 +238,7 @@ header .container {
 
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .item:not(:last-child) {
@@ -275,6 +282,7 @@ header .container {
   text-decoration: none;
   padding-top: 24px;
   padding-bottom: 25px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .envelope-img {
   
@@ -342,7 +350,6 @@ header .container {
   padding: 10px 32px;
 
   cursor: pointer;
-
   width: 200px;
 }
 
@@ -510,7 +517,7 @@ header .container {
   color: #AFB1B8;
   box-sizing: border-box;
   border-radius: 4px;  
-  
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
  
   
 }
@@ -630,6 +637,7 @@ header .container {
   border-radius: 4px;
   padding: 6px 22px;
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button .btn-list:not(:last-child) {
@@ -657,7 +665,31 @@ button {
   padding-left: 0px;
   margin: 0px;
 }
-
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--text-title-white);
+  margin: 0 auto;
+  padding: 63px 24px;
+  transform: translateY(100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+}
+.portfolio .link:hover .overlay,
+.portfolio .link:focus .overlay {
+  transform: translateY(0);
+}
 
 .portfolio .item {
   width: 370px;
