@@ -196,28 +196,39 @@ header .container {
   width: 44.27px;
   height:49.23px;
   fill: #AFB1B8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company-list-icon2 {
   width: 40px;
   height:52px;
   fill: #AFB1B8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }.company-list-icon3 {
   width: 41px;
   height:42.6px;
   fill: #AFB1B8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }.company-list-icon4 {
   width: 79.66px;
   height:42.02px;
   fill: #AFB1B8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }.company-list-icon5 {
   width: 59px;
   height:47px;
   fill: #AFB1B8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }.company-list-icon6 {
   width: 88.48px;
   height:45.44px;
   fill: #AFB1B8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 /* site-nav */
@@ -240,6 +251,20 @@ header .container {
   padding-bottom: 32px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.item .hover-current::after {
+  content: "";
+  display: block;
+  margin-top: 28px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  position: absolute; 
+  transition: var(--timing250ms) var(--timing-function);
+}
+
+.site-nav .hover-current:hover::after {
+  transform: scaleX(1.5);
+}
 
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
@@ -258,6 +283,8 @@ header .container {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+
 
 /* contacts-list up */
 .contacts-list {
