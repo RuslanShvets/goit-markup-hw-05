@@ -239,6 +239,8 @@ header .container {
 }
 
 .site-nav .link {
+  display: block;
+  position: relative;
   color: var(--title-text-color);
 
   font-weight: 500;
