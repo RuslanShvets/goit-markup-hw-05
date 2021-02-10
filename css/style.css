@@ -161,7 +161,7 @@ header .container {
   width: 20px;
   height: 20px;
   fill: #FFFFFF;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 .social-list-link:hover .social-list-icon,
@@ -196,38 +196,36 @@ header .container {
   width: 44.27px;
   height:49.23px;
   fill: #AFB1B8;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .company-list-icon2 {
   width: 40px;
   height:52px;
   fill: #AFB1B8;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }.company-list-icon3 {
   width: 41px;
   height:42.6px;
   fill: #AFB1B8;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }.company-list-icon4 {
   width: 79.66px;
   height:42.02px;
   fill: #AFB1B8;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }.company-list-icon5 {
   width: 59px;
   height:47px;
   fill: #AFB1B8;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }.company-list-icon6 {
   width: 88.48px;
   height:45.44px;
   fill: #AFB1B8;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -273,8 +271,7 @@ header .container {
 }
 
 .site-nav .link:hover,
-.site-nav,
-.link:focus {
+.site-nav .link:focus {
   color: var(--accent-color);
 }
 .site-nav .blue {
@@ -311,6 +308,7 @@ header .container {
   text-decoration: none;
   padding-top: 24px;
   padding-bottom: 25px;
+
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .envelope-img {
@@ -318,13 +316,15 @@ header .container {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  fill: currentColor;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .phone-img {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  fill: currentColor;
+  
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-list .link:hover,
@@ -547,6 +547,8 @@ header .container {
   align-items: center;
   width: 170px;
   height: 90px;
+
+  
 }
 .company-title {
   font-weight: bold;
@@ -566,8 +568,7 @@ header .container {
   color: #AFB1B8;
   box-sizing: border-box;
   border-radius: 4px;  
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
- 
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
   
 }
 .companies-names:not(:last-child) {
@@ -686,7 +687,9 @@ header .container {
   border-radius: 4px;
   padding: 6px 22px;
   cursor: pointer;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button .btn-list:not(:last-child) {
@@ -732,7 +735,7 @@ button {
   margin: 0 auto;
   padding: 63px 24px;
   transform: translateY(100%);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
  
 }
 .portfolio .link:hover .overlay,
@@ -752,6 +755,9 @@ button {
 
 .portfolio .link {
   display: block;
+  width: 370px;
+  box-shadow: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .portfolio .link:hover,
@@ -815,6 +821,9 @@ button {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .modal {
@@ -825,8 +834,14 @@ button {
   width: 528px;
   height: 581px;
   background-color: #FFFFFF;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px 
+  rgba(0, 0, 0, 0.12), 
+  0px 1px 1px rgba(0, 0, 0, 0.14), 
+  0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .modal-close-btn {
