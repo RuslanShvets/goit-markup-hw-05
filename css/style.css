@@ -166,7 +166,7 @@ header .container {
 }
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
-  color: var(--text-title-white);
+    fill: var(--text-title-white);
 }
 .social-list-items:not(:last-child) {
   margin-right: 10px;
@@ -316,23 +316,38 @@ header .container {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-
+  fill: var(--general-color-text);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .phone-img {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: var(--general-color-text);
   
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-list .link:hover,
 .contacts-list .link:focus {
-  color: var(--accent-color)
+  color: var(--accent-color);
+  fill: var(--accent-color);
+  
+}
+.contacts-list .link:hover .envelope-img, 
+.contacts-list .link:focus .envelope-img {
+  fill: var(--accent-color);
+}
+
+.contacts-list .link:hover .phone-img, 
+.contacts-list .link:focus .phone-img {
+  fill: var(--accent-color);
 }
 
 
+.current {
+  color: var(--accent-color);
+}
 /* Hero */
 .hero {
   max-width: 1600px; 
